@@ -82,16 +82,12 @@ nav {
   border-spacing: 0px 20px;
 }
 
-.form-div form table th,
-.form-div form table td {
-  /* border: 1px solid royalblue; */
-}
-
 .form-div form table th {
   color: rgba(175, 175, 175, 0.534);
 }
 .form-div form table td {
   color: white;
+  background-color: #14151f5d;
 }
 .form-div form table tbody tr:hover td {
   background-color: #14151f;
