@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all 0.2s cubic-bezier(0.17, 0.88, 0.75, 0.96);
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: #16161e;
+  font-family: "outfit";
+}
+
+header {
+  background-color: #1e202e;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.nav-title a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.table-parent-div {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-user-box a {
+  text-decoration: none;
+  color: rgb(121, 226, 121);
+  background-color: #1e202e;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+}
+.add-user-box a:hover {
+  color: rgb(167, 253, 167);
+  background-color: #252738;
+}
+
+.info {
+  text-align: center;
+  margin-top: 2rem;
+}
+.info h2 {
+  color: #ffffffd5;
+}
+.info P {
+  color: #ffffff3b;
+}
+.form-div {
+  margin-top: 2rem;
+  background-color: #1e202e;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 100%;
+}
+.new-user {
+  width: 100%;
+}
+.form-group {
+  /* border: 1px solid royalblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group input[type="text"] {
+  height: 30px;
+  width: 100%;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 1.1rem 0.3rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  background-color: #34374d;
+  box-sizing: border-box;
+  color: white;
+}
+.form-group input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.377);
+}
+
+.radio-div {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-group button {
+  padding: 0.3rem 0;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  background-color: #34374d;
+  color: rgba(255, 255, 255, 0.479);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.form-group button:hover {
+  background-color: rgb(88, 184, 88);
+  color: white;
+}
+.form-group label {
+  color: white;
+  font-weight: 600;
+}
+.form-div form table {
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px 20px;
+}
+
+.form-div form table th {
+  color: rgba(175, 175, 175, 0.534);
+}
+.form-div form table td {
+  color: white;
+  background-color: #14151f5d;
+}
+.form-div form table tbody tr:hover td {
+  background-color: #14151f;
+}
+.form-div form table tbody tr td {
+  padding: 1rem 3rem;
+}
+
+.action a {
+  color: rgba(218, 216, 216, 0.644);
+}
+.action a:first-child:hover {
+  color: lightgreen;
+}
+.action a:last-child:hover {
+  color: rgb(255, 23, 73);
+}
+.action a:first-child {
+  margin-right: 20px;
+}
+/* 
+
+- Grid System
+
+*/
+
+/* sm */
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+/* md */
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+/* lg */
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* xl */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+/* xxl */
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
