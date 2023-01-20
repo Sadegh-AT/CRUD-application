@@ -28,6 +28,13 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/add-user", (req, res) => {
+  res.render("add-user");
+});
+app.get("/update-user", (req, res) => {
+  res.render("update-user");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is Running on http://localhost:${PORT}`);
 });

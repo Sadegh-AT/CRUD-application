@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Application</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../../assets/css/add-user.css">
-</head>
-
-<body>
-
-    <header id="header">
-        <div class="container">
-            <nav>
-                <div class="nav-title">
-                    <a href="/" class="nav-brant">User Managment System</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+<!-- include Header -->
+<%- include("include/_header.ejs")%>
+    <!-- include Header -->
 
     <!-- Main Site -->
     <main id="site-main">
@@ -31,17 +8,17 @@
             <div class="table-parent-div">
                 <div class="table-div">
                     <div class="add-user-box">
-                        <a href="../index.html">
+                        <a href="/">
                             <span class=""><i class="fa-solid fa-arrow-left"></i></i></span>
                         </a>
                     </div>
                     <div class="info">
-                        <h2>Add Users</h2>
-                        <p>Use the blew form to creat a new account</p>
+                        <h2>Update Users</h2>
+                        <p>Use the blew form to creat a updateew account</p>
                     </div>
                     <!-- form haneling -->
                     <div class="form-div">
-                        <form action="/" method="post">
+                        <form action="/" method="post" id="update-user">
                             <div class="new-user">
                                 <div class="form-group">
                                     <label for="name">Name</label>
@@ -84,11 +61,13 @@
                             </div>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
     </main>
     <!-- Main Site -->
-</body>
 
-</html>
+    <!-- include Footer -->
+    <%- include("include/_footer.ejs")%>
+        <!-- include Footer -->

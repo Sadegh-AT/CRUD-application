@@ -3,7 +3,40 @@
     <!-- include Header -->
 
 
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="table-parent-div">
+                <div class="table-div">
+                    <div class="add-user-box">
+                        <a href="/add-user">
+                            <span class="">New User <i class="fa-solid fa-user"></i></span>
+                        </a>
+                    </div>
+                    <!-- form haneling -->
+                    <div class="form-div">
+                        <form action="/" method="post">
+                            <table class="table">
+                                <thead>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Gender</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </thead>
+                                <tbody>
+                                    <%- include("include/_show.ejs")%>
 
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main Site -->
 
     <!-- include Footer -->
     <%- include("include/_footer.ejs")%>

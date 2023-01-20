@@ -139,9 +139,12 @@ form {
   background-color: rgb(88, 184, 88);
   color: white;
 }
-.form-group label {
+.form-group .lbl-title {
   color: white;
   font-weight: 600;
+}
+.form-group label {
+  color: rgba(255, 255, 255, 0.479);
 }
 .form-div form table {
   text-align: center;
